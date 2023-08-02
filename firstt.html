@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .menu-box {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #F4A896;
+            border-color: #358597;
+            border-style: double;
+        }
+        h2 {
+            text-align: center;
+            color: black;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .menu-item {
+            font-size: 18px;
+            color: #666;
+        }
+        h1 {
+            text-align: center;
+        }
+        body {
+            background-color: #D3D3D3;
+        }
+
+        /* Desktop Mockup */
+        @media (min-width: 992px) {
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .menu-box {
+                width: 30%;
+            }
+        }
+
+        /* Tablet Mockup */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .container {
+                flex-wrap: wrap;
+            }
+            .menu-box {
+                width: 45%;
+            }
+        }
+
+        /* Mobile Mockup */
+        @media (max-width: 767px) {
+            .container {
+                flex-wrap: wrap;
+            }
+            .menu-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>OUR MENU</h1>
+    <div class="container">
+        <div class="menu-box">
+            <h2>Chicken</h2>
+            <ul>
+                <li><span class="menu-item">Grilled Chicken</span></li>
+                <li><span class="menu-item">Fried Chicken</span></li>
+                <li><span class="menu-item">Chicken Wings</span></li>
+            </ul>
+        </div>
+        <div class="menu-box">
+            <h2>Sushi</h2>
+            <ul>
+                <li><span class="menu-item">California Roll</span></li>
+                <li><span class="menu-item">Spicy Tuna Roll</span></li>
+                <li><span class="menu-item">Salmon Nigiri</span></li>
+            </ul>
+        </div>
+        <div class="menu-box">
+            <h2>Beef</h2>
+            <ul>
+                <li><span class="menu-item">Steak</span></li>
+                <li><span class="menu-item">Beef Burger</span></li>
+                <li><span class="menu-item">Beef Stir Fry</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
